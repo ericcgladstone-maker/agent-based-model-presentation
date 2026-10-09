@@ -1,0 +1,9 @@
+# Cloudflare Workers Static Assets, asset-only (no Worker script), like the other walkthroughs.
+# Deploy with:  npx wrangler deploy   (from this folder)
+# Serves at https://agentbasedmodel.eric-c-gladstone.workers.dev
+name = "agentbasedmodel"
+compatibility_date = "2026-10-09"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
